@@ -12,6 +12,4 @@ import CoreData
 
 public class ChartData: NSManagedObject {
 
-
-
 }

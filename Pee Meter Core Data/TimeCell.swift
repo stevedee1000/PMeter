@@ -24,7 +24,7 @@ class TimeCell: UITableViewCell {
     
     
     
-    func configureCell(item: InOutData, dd: String) {
+    func configureCell(item: InOutData) {
         
         dateDate.text = TimeCell.dateExtractor(dateString: item.dateTime)
         timeTime.text = TimeCell.timeExtractor(dateString: item.dateTime)
@@ -43,7 +43,7 @@ class TimeCell: UITableViewCell {
         totalIn.text = String(fInTotal)
         totalCV.text = String(cVOutTotal)
         totalNV.text = String(nVOutTotal)
-        
+        return
     }
         
     
@@ -53,9 +53,9 @@ class TimeCell: UITableViewCell {
         //print(dd, cVOutTotal, nVOutTotal, fInTotal)
         
         configureHeader(dd: dd, cVOutTotal: cVOutTotal, nVOutTotal: nVOutTotal, fInTotal: fInTotal)
-        
+        return
 
-        }
+    }
     
 
     

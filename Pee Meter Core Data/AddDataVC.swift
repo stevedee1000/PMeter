@@ -1,5 +1,5 @@
 //
-//  DataLoggerVC.swift
+//  AddDataVC.swift
 //  Pee Meter Core Data
 //
 //  Created by Stephen Desterhaft on 12/9/16.
@@ -7,29 +7,35 @@
 //
 
 import UIKit
+import CoreData
 
-class DataLoggerVC: UIViewController {
+class AddDataVC: UIViewController, NSFetchedResultsControllerDelegate {
     
     @IBOutlet weak var myDatePicker: UIDatePicker!
-    
-    @IBOutlet weak var label2: UILabel!
-    @IBOutlet weak var label3: UILabel!
-    @IBOutlet weak var label4: UILabel!
-    @IBOutlet weak var label5: UILabel!
-    
     @IBOutlet weak var nVOutLabel: UITextField!
     @IBOutlet weak var cVOutLabel: UITextField!
     @IBOutlet weak var inLabel: UITextField!
 
+    var itemToEdit: InOutData?
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        myDatePicker.backgroundColor = UIColor.white.withAlphaComponent(0.75)
+        myDatePicker.backgroundColor = (UIColor.init(red: 0.65, green: 0.89, blue: 0.91, alpha: 0.82))
+        myDatePicker.setValue(UIColor.red, forKey: "textColor")
         
-        label2.text = "Press Update button above to see data"
-        label3.text = "Press Update button above to see data"
-        label4.text = "Press Update button above to see data"
-        label5.text = "Press Update button above to see data"
+        navigationController?.navigationBar.tintColor = UIColor.red
+        
+        if let topItem = self.navigationController?.navigationBar.topItem {
+            topItem.backBarButtonItem = UIBarButtonItem(title: "Data Table", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        }
+        
+        if itemToEdit != nil {
+            
+            loadItemData()
+        }
         
     }
 
@@ -38,39 +44,70 @@ class DataLoggerVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func updateButtonPressed(_ sender: UIBarButtonItem) {
-        
-        //        label2.isHidden = false
-        //        label3.isHidden = false
-        //        label4.isHidden = false
-        //        label5.isHidden = false
-        
-        label2.text = DateFormatter.localizedString(from: myDatePicker.date, dateStyle: DateFormatter.Style.short, timeStyle: DateFormatter.Style.short)
-        
-        let printFormatter = DateFormatter()
-        printFormatter.dateFormat = "MMM dd, yyyy, h:mm a"
-        
-        label2.text = "Date/Time: \(printFormatter.string(from: myDatePicker.date))"
-        label3.text = "NV Volume: \(nVOutLabel.text!) mL"
-        label4.text = "CV Volume: \(cVOutLabel.text!) mL"
-        label5.text = "Drink Volume: \(inLabel.text!) mL"
-        
-    }
-    
     @IBAction func saveButtonPressed(_ sender: UIButton) {
         
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyyMMddHHmm"
-        //_ = formatter.string(from: myDatePicker.date)
-        let dataArray = [formatter.string(from: myDatePicker.date), nVOutLabel.text!, cVOutLabel.text!, inLabel.text!]
-        label2.text = ""
-        label3.text = ""
-        label4.text = ""
-        label5.text = "dataArray = \(dataArray)"
+        var item: InOutData!
+        
+        //Saving new item or modified item??
+        if itemToEdit == nil {
+            item = InOutData(context: context)
+        } else {
+            item = itemToEdit
+        }
+        
+        if let cVOut = cVOutLabel.text {
+            item.cVOut = Int16(cVOut)!
+        }
+        if let nVOut = nVOutLabel.text {
+            item.nVOut = Int16(nVOut)!
+        }
+        if let fIn = inLabel.text {
+            item.fIn = Int16(fIn)!
+        }
+        
+        let myFormatter = DateFormatter()
+        myFormatter.dateFormat = "yyyyMMddHHmm"
+        if myDatePicker != nil {
+            item.dateTime = myFormatter.string(from: myDatePicker.date)
+        }
+        
+        ad.saveContext()
+        
+        nVOutLabel.text = "0"
+        cVOutLabel.text = "0"
+        inLabel.text = "0"
+        
+        //self.tabBarController?.selectedIndex = 0
+        _ = navigationController?.popViewController(animated: true)
+
     }
     
-    @IBAction func backPressed(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
+    func loadItemData () {
+        
+        if let item = itemToEdit {
+            
+            nVOutLabel.text = "\(item.nVOut)"
+            cVOutLabel.text = "\(item.cVOut)"
+            inLabel.text = "\(item.fIn)"
+            
+            //Set the Date Picker
+            let myFormatter = DateFormatter()
+            myFormatter.dateFormat = "yyyyMMddHHmm"
+            let pickerDate = myFormatter.date(from: item.dateTime!)
+            myDatePicker.setDate(pickerDate!, animated: true)
+        }
+    }
+    
+    @IBAction func deletePressed(_ sender: UIBarButtonItem) {
+        
+        if itemToEdit != nil {
+            context.delete(itemToEdit!)
+            ad.saveContext()
+        }
+        _ = navigationController?.popViewController(animated: true)
     }
 }
+
+
+
 
