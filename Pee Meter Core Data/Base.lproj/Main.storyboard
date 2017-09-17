@@ -12,21 +12,21 @@
         <!--Add/Edit Data-->
         <scene sceneID="R1y-l7-Lji">
             <objects>
-                <viewController id="VnF-1G-We7" customClass="AddDataVC" customModule="Pee_Meter_Core_Data" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="VnF-1G-We7" customClass="AddDataVC" customModule="Pee_Meter_Core_Data" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9tW-E2-jt6"/>
                         <viewControllerLayoutGuide type="bottom" id="Wnv-iC-53L"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ilv-7T-5zq">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grc-7n-9Qh" userLabel="Date/Time Stack View">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="A64-jc-YMk">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
-                                        <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.094117647060000004" green="0.47843137250000001" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <string key="text">Select
 Date
 and
@@ -35,9 +35,8 @@ Time</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="9wW-EM-j72">
+                                    <datePicker opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="9wW-EM-j72">
                                         <rect key="frame" x="125" y="0.0" width="250" height="100"/>
-                                        <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <date key="date" timeIntervalSinceReferenceDate="502149690.47827703">
                                             <!--2016-11-29 22:01:30 +0000-->
                                         </date>
@@ -48,7 +47,7 @@ Time</string>
                                         </userDefinedRuntimeAttributes>
                                     </datePicker>
                                 </subviews>
-                                <color key="backgroundColor" red="0.65098039215686276" green="0.8901960784313725" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.6705882353" green="0.7725490196" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="nFx-qg-jh4">
                                         <variation key="heightClass=compact-widthClass=compact" constant="50"/>
@@ -57,11 +56,11 @@ Time</string>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OGn-G9-5tE" userLabel="NV Stack View">
-                                <rect key="frame" x="0.0" y="100" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="164" width="375" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ov8-1N-wzl">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
-                                        <color key="backgroundColor" red="0.79607843137254897" green="0.94509803921568625" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.6705882353" green="0.7725490196" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <string key="text">NV OUTPUT
 (Normal Void)</string>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
@@ -70,7 +69,7 @@ Time</string>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="bezel" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="1BE-sb-SPb">
                                         <rect key="frame" x="125" y="0.0" width="125" height="50"/>
-                                        <color key="backgroundColor" red="0.79607843137254897" green="0.94509803921568625" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.6705882353" green="0.7725490196" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -83,7 +82,7 @@ Time</string>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ml" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="fc1-Bz-BAs">
                                         <rect key="frame" x="250" y="0.0" width="125" height="50"/>
-                                        <color key="backgroundColor" red="0.79607843140000001" green="0.94509803920000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.6705882353" green="0.7725490196" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -103,11 +102,11 @@ Time</string>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="i7N-dy-Bvw" userLabel="CV Stack View">
-                                <rect key="frame" x="0.0" y="150" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="214" width="375" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="DMa-Kc-rTV">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
-                                        <color key="backgroundColor" red="0.79607843140000001" green="0.94509803920000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.6705882353" green="0.7725490196" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <string key="text">CV OUTPUT
 (Catheter Void)</string>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
@@ -116,7 +115,7 @@ Time</string>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="bezel" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="h6U-1p-uvs">
                                         <rect key="frame" x="125" y="0.0" width="125" height="50"/>
-                                        <color key="backgroundColor" red="0.79607843140000001" green="0.94509803920000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.6705882353" green="0.7725490196" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -129,7 +128,7 @@ Time</string>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ml" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ZkI-UT-cdo">
                                         <rect key="frame" x="250" y="0.0" width="125" height="50"/>
-                                        <color key="backgroundColor" red="0.79607843140000001" green="0.94509803920000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.6705882353" green="0.7725490196" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -149,18 +148,18 @@ Time</string>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HEl-9h-p96" userLabel="Input Stack View">
-                                <rect key="frame" x="0.0" y="200" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="264" width="375" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INPUT Drink Amount" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="Zzx-8y-e1g">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
-                                        <color key="backgroundColor" red="0.79607843140000001" green="0.94509803920000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.6705882353" green="0.7725490196" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="bezel" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="WPx-KG-nup">
                                         <rect key="frame" x="125" y="0.0" width="125" height="50"/>
-                                        <color key="backgroundColor" red="0.79607843140000001" green="0.94509803920000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.6705882353" green="0.7725490196" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -173,7 +172,7 @@ Time</string>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ml" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ArW-8m-Xzj">
                                         <rect key="frame" x="250" y="0.0" width="125" height="50"/>
-                                        <color key="backgroundColor" red="0.79607843140000001" green="0.94509803920000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.6705882353" green="0.7725490196" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -193,8 +192,8 @@ Time</string>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHs-ZY-IS1">
-                                <rect key="frame" x="0.0" y="300" width="375" height="40"/>
-                                <color key="backgroundColor" red="0.44313725490196076" green="0.78823529411764703" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="0.0" y="364" width="375" height="40"/>
+                                <color key="backgroundColor" red="0.094117647060000004" green="0.47843137250000001" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="O3s-65-uJt">
                                         <variation key="heightClass=compact-widthClass=compact" constant="20"/>
@@ -212,7 +211,7 @@ Time</string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.89019607840000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.6705882353" green="0.7725490196" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="A64-jc-YMk" firstAttribute="width" secondItem="ov8-1N-wzl" secondAttribute="width" id="2yC-OR-HNr"/>
                             <constraint firstAttribute="trailing" secondItem="HEl-9h-p96" secondAttribute="trailing" id="7EI-fW-bfe"/>
@@ -232,7 +231,6 @@ Time</string>
                             <constraint firstItem="grc-7n-9Qh" firstAttribute="leading" secondItem="Ilv-7T-5zq" secondAttribute="leading" id="tyY-r1-Q3C"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Add Data" image="second" selectedImage="second" id="zYm-8q-adW"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Add/Edit Data" id="BBL-2G-wpZ">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="392-Qi-86Q">
@@ -254,6 +252,25 @@ Time</string>
             </objects>
             <point key="canvasLocation" x="2159" y="-157"/>
         </scene>
+        <!--Charts-->
+        <scene sceneID="yIe-NC-Vfi">
+            <objects>
+                <viewController id="yvw-0a-uqB" customClass="ChartsVC" customModule="Pee_Meter_Core_Data" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4J9-LM-hLk"/>
+                        <viewControllerLayoutGuide type="bottom" id="xzT-qy-g1Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="baN-8v-XXR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Charts" image="bar-chart" id="jj8-2l-nHO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TdQ-e8-iSh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="692" y="544"/>
+        </scene>
         <!--P Meter-->
         <scene sceneID="Iw7-h4-7lb">
             <objects>
@@ -268,7 +285,7 @@ Time</string>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data Table" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Uz-tR-I1b">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
-                                <color key="backgroundColor" red="0.65098039215686276" green="0.8901960784313725" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.094117647058823528" green="0.47843137254901957" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="d9X-m0-5EZ"/>
                                 </constraints>
@@ -281,21 +298,21 @@ Time</string>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fc9-J9-Y6d">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="25"/>
-                                        <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.094117647060000004" green="0.47843137250000001" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Out (ml)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2aX-Xl-zur">
                                         <rect key="frame" x="125" y="0.0" width="125" height="25"/>
-                                        <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.094117647060000004" green="0.47843137250000001" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total In (ml)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zd-Us-VQz">
                                         <rect key="frame" x="250" y="0.0" width="125" height="25"/>
-                                        <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.094117647060000004" green="0.47843137250000001" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -311,23 +328,23 @@ Time</string>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dec 13, 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ewt-UM-OlB">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="25"/>
-                                        <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.094117647060000004" green="0.47843137250000001" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.95686274509803915" green="0.96470588235294119" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RG7-8b-HQu">
                                         <rect key="frame" x="125" y="0.0" width="125" height="25"/>
-                                        <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.094117647060000004" green="0.47843137250000001" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.95686274509803915" green="0.96470588235294119" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1537" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEb-Ba-XL9">
                                         <rect key="frame" x="250" y="0.0" width="125" height="25"/>
-                                        <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.094117647060000004" green="0.47843137250000001" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.95686274509803915" green="0.96470588235294119" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -341,21 +358,21 @@ Time</string>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NV Total:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qx-zO-tjZ">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="25"/>
-                                        <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.094117647060000004" green="0.47843137250000001" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFm-B9-3JY">
                                         <rect key="frame" x="125" y="0.0" width="125" height="25"/>
-                                        <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.094117647060000004" green="0.47843137250000001" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YW-NF-IvO">
                                         <rect key="frame" x="250" y="0.0" width="125" height="25"/>
-                                        <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.094117647060000004" green="0.47843137250000001" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -371,21 +388,21 @@ Time</string>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CV Total:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ktc-yc-X0z">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="25"/>
-                                        <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.094117647060000004" green="0.47843137250000001" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVJ-1u-HuX">
                                         <rect key="frame" x="125" y="0.0" width="125" height="25"/>
-                                        <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.094117647060000004" green="0.47843137250000001" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fe-ik-eUE">
                                         <rect key="frame" x="250" y="0.0" width="125" height="25"/>
-                                        <color key="backgroundColor" red="0.65098039220000004" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.094117647060000004" green="0.47843137250000001" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -401,35 +418,35 @@ Time</string>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRZ-s4-68P">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="25"/>
-                                        <color key="backgroundColor" red="0.79607843140000001" green="0.94509803920000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.6705882352941176" green="0.77254901960784317" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rb7-Ly-UV7">
                                         <rect key="frame" x="75" y="0.0" width="75" height="25"/>
-                                        <color key="backgroundColor" red="0.79607843140000001" green="0.94509803920000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.6705882352941176" green="0.77254901960784317" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NV Out (ml)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ML-aA-ZZu">
                                         <rect key="frame" x="150" y="0.0" width="75" height="25"/>
-                                        <color key="backgroundColor" red="0.79607843140000001" green="0.94509803920000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.6705882352941176" green="0.77254901960784317" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CV Out (ml)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5U-7O-lm4">
                                         <rect key="frame" x="225" y="0.0" width="75" height="25"/>
-                                        <color key="backgroundColor" red="0.79607843140000001" green="0.94509803920000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.6705882352941176" green="0.77254901960784317" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fluid In (ml)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hE-bF-loD">
                                         <rect key="frame" x="300" y="0.0" width="75" height="25"/>
-                                        <color key="backgroundColor" red="0.79607843140000001" green="0.94509803920000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.6705882352941176" green="0.77254901960784317" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -439,13 +456,13 @@ Time</string>
                                     <constraint firstAttribute="height" constant="25" id="bH0-4y-Zzk"/>
                                 </constraints>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7RG-bB-uY1">
+                            <tableView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7RG-bB-uY1">
                                 <rect key="frame" x="0.0" y="165" width="375" height="394"/>
                                 <color key="backgroundColor" red="0.79607843140000001" green="0.94509803920000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="separatorColor" red="0.79607843140000001" green="0.94509803920000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="sectionIndexBackgroundColor" red="0.79607843140000001" green="0.94509803920000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" red="0.63137254899999995" green="0.69803921570000005" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.63137254899999995" green="0.69803921570000005" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TimeCell" id="Rzm-0y-kXN" customClass="TimeCell" customModule="Pee_Meter_Core_Data" customModuleProvider="target">
+                                    <tableViewCell autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TimeCell" id="Rzm-0y-kXN" customClass="TimeCell" customModule="Pee_Meter_Core_Data" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rzm-0y-kXN" id="GdU-Wn-7mz">
@@ -453,34 +470,39 @@ Time</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OII-xA-VIn" userLabel="Time Stack View">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="25"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="25"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFW-hR-G8a">
-                                                            <rect key="frame" x="0.0" y="0.0" width="75" height="25"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="83" height="25"/>
+                                                            <color key="backgroundColor" red="0.6705882353" green="0.7725490196" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
                                                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGG-iv-fwH">
-                                                            <rect key="frame" x="75" y="0.0" width="75" height="25"/>
+                                                            <rect key="frame" x="83" y="0.0" width="82.5" height="25"/>
+                                                            <color key="backgroundColor" red="0.6705882353" green="0.7725490196" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
                                                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NV" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9QF-3B-bDd">
-                                                            <rect key="frame" x="150" y="0.0" width="75" height="25"/>
+                                                            <rect key="frame" x="165.5" y="0.0" width="83" height="25"/>
+                                                            <color key="backgroundColor" red="0.6705882353" green="0.7725490196" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
                                                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CV" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxx-Ii-rLE">
-                                                            <rect key="frame" x="225" y="0.0" width="75" height="25"/>
+                                                            <rect key="frame" x="248.5" y="0.0" width="82.5" height="25"/>
+                                                            <color key="backgroundColor" red="0.6705882353" green="0.7725490196" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
                                                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhx-rC-pzU">
-                                                            <rect key="frame" x="300" y="0.0" width="75" height="25"/>
+                                                            <rect key="frame" x="331" y="0.0" width="83" height="25"/>
+                                                            <color key="backgroundColor" red="0.6705882353" green="0.7725490196" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
                                                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -497,7 +519,7 @@ Time</string>
                                                 <constraint firstItem="OII-xA-VIn" firstAttribute="leading" secondItem="GdU-Wn-7mz" secondAttribute="leading" id="uYl-io-uaP"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.79607843140000001" green="0.94509803920000002" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.6705882353" green="0.7725490196" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="cVOut" destination="Kxx-Ii-rLE" id="MCo-e5-3xv"/>
                                             <outlet property="dateD" destination="Ewt-UM-OlB" id="YOg-Z7-Een"/>
@@ -524,7 +546,6 @@ Time</string>
                             <constraint firstItem="aNl-fm-1Zz" firstAttribute="leading" secondItem="PST-kM-6m6" secondAttribute="leading" id="Jrc-II-O9b"/>
                             <constraint firstItem="Xbb-bz-58p" firstAttribute="top" secondItem="5qx-zO-tjZ" secondAttribute="bottom" id="LpI-jL-ZjX"/>
                             <constraint firstItem="aNl-fm-1Zz" firstAttribute="top" secondItem="2aX-Xl-zur" secondAttribute="bottom" id="P5k-uB-88d"/>
-                            <constraint firstItem="IDF-bD-wI0" firstAttribute="top" secondItem="7RG-bB-uY1" secondAttribute="bottom" id="PKL-PV-bIL"/>
                             <constraint firstAttribute="trailing" secondItem="7RG-bB-uY1" secondAttribute="trailing" id="SMA-E0-KjT"/>
                             <constraint firstItem="7RG-bB-uY1" firstAttribute="leading" secondItem="PST-kM-6m6" secondAttribute="leading" id="VyF-IK-hoX"/>
                             <constraint firstItem="3Uz-tR-I1b" firstAttribute="leading" secondItem="PST-kM-6m6" secondAttribute="leading" id="WJB-F8-0ag"/>
@@ -535,6 +556,7 @@ Time</string>
                             <constraint firstItem="Y8U-lG-R2o" firstAttribute="top" secondItem="Xbb-bz-58p" secondAttribute="bottom" id="eba-Pc-rXw"/>
                             <constraint firstItem="7RG-bB-uY1" firstAttribute="top" secondItem="Y8U-lG-R2o" secondAttribute="bottom" id="gLH-gF-kkj"/>
                             <constraint firstAttribute="trailing" secondItem="3Uz-tR-I1b" secondAttribute="trailing" id="gOg-7l-e10"/>
+                            <constraint firstAttribute="bottom" secondItem="7RG-bB-uY1" secondAttribute="bottom" id="qT7-qM-KRj"/>
                             <constraint firstAttribute="trailing" secondItem="Xbb-bz-58p" secondAttribute="trailing" id="rdt-PL-bac"/>
                             <constraint firstItem="log-WH-UAM" firstAttribute="top" secondItem="Ewt-UM-OlB" secondAttribute="bottom" id="wum-gv-iW7"/>
                             <constraint firstItem="OV3-x3-6kV" firstAttribute="top" secondItem="3Uz-tR-I1b" secondAttribute="bottom" id="ya3-ij-ZjH"/>
@@ -544,7 +566,7 @@ Time</string>
                         <barButtonItem key="rightBarButtonItem" title="Add Record" id="obf-Pg-8FY">
                             <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="VnF-1G-We7" kind="show" id="9RF-i2-tjh"/>
+                                <segue destination="VnF-1G-We7" kind="show" identifier="AddDataVC" id="9RF-i2-tjh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -560,36 +582,38 @@ Time</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pq1-5F-Zez" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1419" y="-157"/>
+            <point key="canvasLocation" x="1418.4000000000001" y="-157.87106446776613"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3yW-pi-OU3">
             <objects>
-                <tabBarController id="3uB-uN-VbN" sceneMemberID="viewController">
+                <tabBarController extendedLayoutIncludesOpaqueBars="YES" id="3uB-uN-VbN" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="jP0-KC-Prq">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="jP0-KC-Prq">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" red="0.8901960784313725" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.6705882353" green="0.7725490196" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.054901960784313725" green="0.78431372549019607" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="p6f-sW-bwY" kind="relationship" relationship="viewControllers" id="nBH-Yh-bKO"/>
+                        <segue destination="yvw-0a-uqB" kind="relationship" relationship="viewControllers" id="sby-7Q-LF3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CNh-ha-gLa" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-49" y="-157"/>
+            <point key="canvasLocation" x="-105" y="147"/>
         </scene>
         <!--Data Table-->
         <scene sceneID="NGp-s8-HGg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="p6f-sW-bwY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Data Table" id="qpi-XG-EEd"/>
+                    <tabBarItem key="tabBarItem" title="Data Table" image="text-list" id="qpi-XG-EEd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="vzm-IW-XIm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.44313725490196076" green="0.78823529411764703" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0078431372549019607" green="0.27450980392156865" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -602,7 +626,8 @@ Time</string>
         </scene>
     </scenes>
     <resources>
-        <image name="second" width="30" height="30"/>
+        <image name="bar-chart" width="30" height="30"/>
+        <image name="text-list" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="9RF-i2-tjh"/>

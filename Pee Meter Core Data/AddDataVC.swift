@@ -22,14 +22,16 @@ class AddDataVC: UIViewController, NSFetchedResultsControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tabBarController?.tabBar.isHidden = true
 
-        myDatePicker.backgroundColor = (UIColor.init(red: 0.65, green: 0.89, blue: 0.91, alpha: 0.82))
+        myDatePicker.backgroundColor = (UIColor.init(red: 24.0/255.0, green: 122.0/255.0, blue: 191.0/255.0, alpha: 1))
         myDatePicker.setValue(UIColor.red, forKey: "textColor")
         
         navigationController?.navigationBar.tintColor = UIColor.red
         
         if let topItem = self.navigationController?.navigationBar.topItem {
-            topItem.backBarButtonItem = UIBarButtonItem(title: "Data Table", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+            topItem.backBarButtonItem = UIBarButtonItem(title: "Cancel", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         }
         
         if itemToEdit != nil {
@@ -37,11 +39,6 @@ class AddDataVC: UIViewController, NSFetchedResultsControllerDelegate {
             loadItemData()
         }
         
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func saveButtonPressed(_ sender: UIButton) {
@@ -55,12 +52,18 @@ class AddDataVC: UIViewController, NSFetchedResultsControllerDelegate {
             item = itemToEdit
         }
         
+        if cVOutLabel.text == "" { cVOutLabel.text = "0" } // Make sure
+        if nVOutLabel.text == "" { nVOutLabel.text = "0" } // the text fields
+        if inLabel.text == "" { inLabel.text = "0" }       // aren't blank
+        
         if let cVOut = cVOutLabel.text {
             item.cVOut = Int16(cVOut)!
         }
+        
         if let nVOut = nVOutLabel.text {
             item.nVOut = Int16(nVOut)!
         }
+        
         if let fIn = inLabel.text {
             item.fIn = Int16(fIn)!
         }
@@ -77,9 +80,7 @@ class AddDataVC: UIViewController, NSFetchedResultsControllerDelegate {
         cVOutLabel.text = "0"
         inLabel.text = "0"
         
-        //self.tabBarController?.selectedIndex = 0
         _ = navigationController?.popViewController(animated: true)
-
     }
     
     func loadItemData () {
@@ -105,6 +106,14 @@ class AddDataVC: UIViewController, NSFetchedResultsControllerDelegate {
             ad.saveContext()
         }
         _ = navigationController?.popViewController(animated: true)
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
+    // when Nav Back button pressed, make tab Bar Controller reappear
+    override func willMove(toParentViewController parent: UIViewController?) {
+        if parent == nil {
+            self.tabBarController?.tabBar.isHidden = false
+        }
     }
 }
 

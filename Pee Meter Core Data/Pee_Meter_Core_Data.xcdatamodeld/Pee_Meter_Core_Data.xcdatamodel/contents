@@ -61,6 +61,6 @@
     </entity>
     <elements>
         <element name="ChartData" positionX="-63" positionY="9" width="128" height="793"/>
-        <element name="InOutData" positionX="259" positionY="288" width="128" height="120"/>
+        <element name="InOutData" positionX="259" positionY="288" width="128" height="118"/>
     </elements>
 </model>

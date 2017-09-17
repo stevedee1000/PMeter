@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1807C9C5D05ADA8E71E9F90E /* Pods_Pee_Meter_Core_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FB0AC15757893A807DB3984 /* Pods_Pee_Meter_Core_Data.framework */; };
 		8D6AB0291DFB544A00A26814 /* AddDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6AB0281DFB544A00A26814 /* AddDataVC.swift */; };
 		8D8C3DD81F664D080045106C /* ChartData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8C3DD61F664D080045106C /* ChartData+CoreDataProperties.swift */; };
 		8D8C3DD91F664D080045106C /* InOutData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8C3DD71F664D080045106C /* InOutData+CoreDataProperties.swift */; };
 		8D8C3DDE1F6650720045106C /* InOutData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8C3DDD1F6650720045106C /* InOutData+CoreDataClass.swift */; };
 		8D8C3DE01F6651900045106C /* ChartData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8C3DDF1F6651900045106C /* ChartData+CoreDataClass.swift */; };
 		8D8C3DE11F6658670045106C /* DataTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5042F1DF8D38600B5E5E5 /* DataTableVC.swift */; };
+		8D8C3E0C1F69DABB0045106C /* ChartsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8C3E0B1F69DABB0045106C /* ChartsVC.swift */; };
 		8DC5042E1DF8D38600B5E5E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5042D1DF8D38600B5E5E5 /* AppDelegate.swift */; };
 		8DC504331DF8D38600B5E5E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DC504311DF8D38600B5E5E5 /* Main.storyboard */; };
 		8DC504361DF8D38600B5E5E5 /* Pee_Meter_Core_Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DC504341DF8D38600B5E5E5 /* Pee_Meter_Core_Data.xcdatamodeld */; };
@@ -22,11 +24,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15A021E1949961241B9D8864 /* Pods-Pee Meter Core Data.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pee Meter Core Data.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pee Meter Core Data/Pods-Pee Meter Core Data.release.xcconfig"; sourceTree = "<group>"; };
+		567F80E70CBA87F2034EE877 /* Pods-Pee Meter Core Data.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pee Meter Core Data.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pee Meter Core Data/Pods-Pee Meter Core Data.debug.xcconfig"; sourceTree = "<group>"; };
+		7FB0AC15757893A807DB3984 /* Pods_Pee_Meter_Core_Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pee_Meter_Core_Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D6AB0281DFB544A00A26814 /* AddDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDataVC.swift; sourceTree = "<group>"; };
 		8D8C3DD61F664D080045106C /* ChartData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChartData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8D8C3DD71F664D080045106C /* InOutData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InOutData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8D8C3DDD1F6650720045106C /* InOutData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InOutData+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8D8C3DDF1F6651900045106C /* ChartData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChartData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8D8C3E0B1F69DABB0045106C /* ChartsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsVC.swift; sourceTree = "<group>"; };
 		8DC5042A1DF8D38600B5E5E5 /* Pee Meter Core Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pee Meter Core Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC5042D1DF8D38600B5E5E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DC5042F1DF8D38600B5E5E5 /* DataTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableVC.swift; sourceTree = "<group>"; };
@@ -43,17 +49,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1807C9C5D05ADA8E71E9F90E /* Pods_Pee_Meter_Core_Data.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BFC70737B7F15FE9E9CC9CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				567F80E70CBA87F2034EE877 /* Pods-Pee Meter Core Data.debug.xcconfig */,
+				15A021E1949961241B9D8864 /* Pods-Pee Meter Core Data.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8D6AB0271DFB540600A26814 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				8DC5042F1DF8D38600B5E5E5 /* DataTableVC.swift */,
 				8D6AB0281DFB544A00A26814 /* AddDataVC.swift */,
+				8D8C3E0B1F69DABB0045106C /* ChartsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -63,6 +80,8 @@
 			children = (
 				8DC5042C1DF8D38600B5E5E5 /* Pee Meter Core Data */,
 				8DC5042B1DF8D38600B5E5E5 /* Products */,
+				1BFC70737B7F15FE9E9CC9CA /* Pods */,
+				E5EAC5806CB907724EF6F276 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +120,14 @@
 			name = TableViews;
 			sourceTree = "<group>";
 		};
+		E5EAC5806CB907724EF6F276 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FB0AC15757893A807DB3984 /* Pods_Pee_Meter_Core_Data.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DC5043F1DF8D38700B5E5E5 /* Build configuration list for PBXNativeTarget "Pee Meter Core Data" */;
 			buildPhases = (
+				64D5A611C61C3E3C927EB7F7 /* [CP] Check Pods Manifest.lock */,
 				8DC504261DF8D38600B5E5E5 /* Sources */,
 				8DC504271DF8D38600B5E5E5 /* Frameworks */,
 				8DC504281DF8D38600B5E5E5 /* Resources */,
+				D9809CA9C4DED70F4878F9DE /* [CP] Embed Pods Frameworks */,
+				9024C4C45CE0F965CE270D89 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,12 +199,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		64D5A611C61C3E3C927EB7F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pee Meter Core Data-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9024C4C45CE0F965CE270D89 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pee Meter Core Data/Pods-Pee Meter Core Data-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9809CA9C4DED70F4878F9DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pee Meter Core Data/Pods-Pee Meter Core Data-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pee Meter Core Data/Pods-Pee Meter Core Data-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8DC504261DF8D38600B5E5E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8D8C3DE01F6651900045106C /* ChartData+CoreDataClass.swift in Sources */,
+				8D8C3E0C1F69DABB0045106C /* ChartsVC.swift in Sources */,
 				8DC5044A1DF8F21800B5E5E5 /* TimeCell.swift in Sources */,
 				8D8C3DD91F664D080045106C /* InOutData+CoreDataProperties.swift in Sources */,
 				8D8C3DD81F664D080045106C /* ChartData+CoreDataProperties.swift in Sources */,
@@ -305,6 +390,7 @@
 		};
 		8DC504401DF8D38700B5E5E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 567F80E70CBA87F2034EE877 /* Pods-Pee Meter Core Data.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 77634XV55B;
@@ -318,6 +404,7 @@
 		};
 		8DC504411DF8D38700B5E5E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15A021E1949961241B9D8864 /* Pods-Pee Meter Core Data.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 77634XV55B;

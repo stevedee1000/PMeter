@@ -27,6 +27,8 @@ class DataTableVC: UIViewController, UITableViewDelegate, UITableViewDataSource,
         tableView.delegate = self
         tableView.dataSource = self
         
+//        self.tabBarController?.tabBar.isHidden = false
+        
 //        generateTestData()
         attemptFetch()
         
@@ -143,10 +145,12 @@ class DataTableVC: UIViewController, UITableViewDelegate, UITableViewDataSource,
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         if let objs = controller.fetchedObjects, objs.count > 0 {
             // might need to change "_" to "item"
             let item = objs[indexPath.row]
             performSegue(withIdentifier: "AddDataVC", sender: item)
+            
         }
     }
     
@@ -214,7 +218,7 @@ class DataTableVC: UIViewController, UITableViewDelegate, UITableViewDataSource,
     
     func configureHeader(dd: String, cVOutTotal: Int, nVOutTotal: Int, fInTotal: Int) {
         
-        print(dd, cVOutTotal, nVOutTotal, fInTotal)
+//        print(dd, cVOutTotal, nVOutTotal, fInTotal)
         
         dateD.text = TimeCell.dateExtractor(dateString: dd)
         let total = cVOutTotal + nVOutTotal
