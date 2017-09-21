@@ -27,7 +27,9 @@ class DataTableVC: UIViewController, UITableViewDelegate, UITableViewDataSource,
         tableView.delegate = self
         tableView.dataSource = self
         
-//        self.tabBarController?.tabBar.isHidden = false
+        guard let tabBar = self.tabBarController?.tabBar else { return } //set unselected tabBar items
+        tabBar.unselectedItemTintColor = UIColor.red
+        
         
 //        generateTestData()
         attemptFetch()
