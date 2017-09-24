@@ -12,31 +12,45 @@ import Charts
 
 class ChartsVC: UIViewController, NSFetchedResultsControllerDelegate {
     
-    var controller: NSFetchedResultsController<InOutData>!
+    var iOData: NSFetchedResultsController<InOutData>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         attemptFetch()
         
-        //print(context.value(forKey: "cVOut") as Any)
 
+//        for record in 0 ..< (iOData.fetchedObjects?.count)! { //this works
+//            print(iOData.fetchedObjects?[record] as Any)
+//        }
+//
+//        if let sections = iOData.sections {
+//            print(sections.count)
+//        }
+//        
+//        let dataArray = [iOData]
+//        
+//        for record in dataArray {
+//            print(record!)
+//        }
+//        //print(context.value(forKey: "cVOut") as Any)
+//
     }
     
     func attemptFetch () {
         
         let fetchRequest: NSFetchRequest<InOutData> = InOutData.fetchRequest()
-        let dateSort = NSSortDescriptor(key: "dateTime", ascending: false)
+        let dateSort = NSSortDescriptor(key: "dateTime", ascending: true)
         fetchRequest.sortDescriptors = [dateSort]
         
-        let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        let iOData = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         
-        controller.delegate = self
-        self.controller = controller
+        iOData.delegate = self
+        self.iOData = iOData
         
         do {
             
-            try controller.performFetch()
+            try iOData.performFetch()
             
         }catch {
             

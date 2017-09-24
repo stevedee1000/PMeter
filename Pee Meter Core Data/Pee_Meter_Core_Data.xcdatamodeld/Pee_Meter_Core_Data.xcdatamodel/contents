@@ -54,13 +54,13 @@
     </entity>
     <entity name="InOutData" representedClassName=".InOutData" syncable="YES">
         <attribute name="cVOut" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="dateTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateTime" optional="YES" attributeType="String" defaultValueString="&quot;&quot;" syncable="YES"/>
         <attribute name="fIn" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="nVOut" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="toChartData" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChartData" inverseName="toInOutData" inverseEntity="ChartData" syncable="YES"/>
     </entity>
     <elements>
         <element name="ChartData" positionX="-63" positionY="9" width="128" height="793"/>
-        <element name="InOutData" positionX="259" positionY="288" width="128" height="118"/>
+        <element name="InOutData" positionX="259" positionY="288" width="128" height="120"/>
     </elements>
 </model>
